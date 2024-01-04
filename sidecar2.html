@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Set the font family for the entire document */
+        body {
+            font-family: 'Avenir', sans-serif;
+            margin-top:200px;
+        }
+
+        /* Add styling for the underlined text and hover effect */
+        .underline {
+            position: relative;
+            text-decoration: underline;
+            cursor: help; /* Change cursor to a help cursor on hover */
+        }
+
+        /* Style for the tooltip (hovering text) */
+        .tooltip {
+            display: none;
+            position: absolute;
+            top: -175px; /* Adjust the positioning of the tooltip */
+            left: 0;
+            background-color: #f9f9f9;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+      
+        /* Style for the special word in the tooltip */
+        .special-word {
+            font-family: 'Cambria', serif; /* Set font family to Arial */
+            /* Add any other styling as needed */
+        }
+         .special-word2 {
+            font-weight: bold;
+            color: #20A39E; /* Set the color to blue */
+            /* Add any other styling as needed */
+        }
+        /* Show the tooltip on hover */
+        .underline:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Use the span element to wrap the underlined text -->
+    <p>An <span class="special-word2">isotope framework </span> consisting of <span class="underline">reference lines and parameters<span class="tooltip"> <b>Global Meteoric Water Line (GMWL)</b><sup>11</sup>= linear relationship between <span class="special-word">δ</span><sup>18</sup>O and <span class="special-word">δ</span><sup>2</sup>H of global precipitation <br><b>Local Meteoric Water Line (LMWL)</b><sup>12</sup> = linear relationship between <span class="special-word">δ</span><sup>18</sup>O and <span class="special-word"> δ</span><sup>2</sup>H of local precipitation <br> <span class="special-word"><b>δ</span><sub>P</sub></b>= isotope composition of amount-weighted precipitation</span></span> can help portray the data in the context of local atmospheric conditions affecting lake-water balances.</p>
+
+</body>
+</html>
